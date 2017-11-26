@@ -12,7 +12,64 @@
 		EF7004CF1F9D6E1800FE4BDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF7004CD1F9D6E1800FE4BDD /* Main.storyboard */; };
 		EF7004D11F9D6E1800FE4BDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF7004D01F9D6E1800FE4BDD /* Assets.xcassets */; };
 		EF7004D41F9D6E1800FE4BDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF7004D21F9D6E1800FE4BDD /* LaunchScreen.storyboard */; };
+		EF7004E11F9D6E4000FE4BDD /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF7004DF1F9D6E4000FE4BDD /* Interface.storyboard */; };
+		EF7004E31F9D6E4000FE4BDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF7004E21F9D6E4000FE4BDD /* Assets.xcassets */; };
+		EF7004EA1F9D6E4000FE4BDD /* Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EF7004E91F9D6E4000FE4BDD /* Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EF7004EF1F9D6E4000FE4BDD /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7004EE1F9D6E4000FE4BDD /* InterfaceController.swift */; };
+		EF7004F11F9D6E4000FE4BDD /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7004F01F9D6E4000FE4BDD /* ExtensionDelegate.swift */; };
+		EF7004F31F9D6E4000FE4BDD /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7004F21F9D6E4000FE4BDD /* NotificationController.swift */; };
+		EF7004F51F9D6E4000FE4BDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF7004F41F9D6E4000FE4BDD /* Assets.xcassets */; };
+		EF7004FA1F9D6E4000FE4BDD /* Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EF7004DD1F9D6E4000FE4BDD /* Watch.app */; };
+		EF7005051F9D6E7300FE4BDD /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7005041F9D6E7300FE4BDD /* GCDAsyncUdpSocket.m */; };
+		EF7005081F9D759900FE4BDD /* SCClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7005061F9D759900FE4BDD /* SCClient.swift */; };
+		EF7005091F9D759900FE4BDD /* SCMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7005071F9D759900FE4BDD /* SCMessage.swift */; };
+		EFE9C3FA1FC21FD7009D775E /* Location.gpx in Resources */ = {isa = PBXBuildFile; fileRef = EFE9C3F91FC21FD7009D775E /* Location.gpx */; };
+		EFE9C3FB1FC21FD7009D775E /* Location.gpx in Resources */ = {isa = PBXBuildFile; fileRef = EFE9C3F91FC21FD7009D775E /* Location.gpx */; };
+		EFE9C3FC1FC21FD7009D775E /* Location.gpx in Resources */ = {isa = PBXBuildFile; fileRef = EFE9C3F91FC21FD7009D775E /* Location.gpx */; };
+		EFE9C41C1FC260F3009D775E /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE9C41B1FC260F3009D775E /* Artwork.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF7004EB1F9D6E4000FE4BDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF7004BE1F9D6E1800FE4BDD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF7004E81F9D6E4000FE4BDD;
+			remoteInfo = "Watch Extension";
+		};
+		EF7004F81F9D6E4000FE4BDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF7004BE1F9D6E1800FE4BDD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF7004DC1F9D6E4000FE4BDD;
+			remoteInfo = Watch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EF7004FE1F9D6E4000FE4BDD /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EF7004EA1F9D6E4000FE4BDD /* Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF7005021F9D6E4000FE4BDD /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				EF7004FA1F9D6E4000FE4BDD /* Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		EF7004C61F9D6E1800FE4BDD /* IoT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IoT.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +79,34 @@
 		EF7004D01F9D6E1800FE4BDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF7004D31F9D6E1800FE4BDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF7004D51F9D6E1800FE4BDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF7004DD1F9D6E4000FE4BDD /* Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Watch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF7004E01F9D6E4000FE4BDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		EF7004E21F9D6E4000FE4BDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF7004E41F9D6E4000FE4BDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF7004E91F9D6E4000FE4BDD /* Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF7004EE1F9D6E4000FE4BDD /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		EF7004F01F9D6E4000FE4BDD /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		EF7004F21F9D6E4000FE4BDD /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		EF7004F41F9D6E4000FE4BDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF7004F61F9D6E4000FE4BDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF7004F71F9D6E4000FE4BDD /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		EF7005031F9D6E7300FE4BDD /* Watch Extension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Watch Extension-Bridging-Header.h"; sourceTree = "<group>"; };
+		EF7005041F9D6E7300FE4BDD /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		EF7005061F9D759900FE4BDD /* SCClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCClient.swift; path = "../../SwiftCoAP-master/Example_Projects/SwiftCoAPClientExample/SwiftCoAPClientExample/SCClient.swift"; sourceTree = "<group>"; };
+		EF7005071F9D759900FE4BDD /* SCMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCMessage.swift; path = "../../SwiftCoAP-master/Example_Projects/SwiftCoAPClientExample/SwiftCoAPClientExample/SCMessage.swift"; sourceTree = "<group>"; };
+		EFE9C3F91FC21FD7009D775E /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
+		EFE9C41B1FC260F3009D775E /* Artwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		EF7004C31F9D6E1800FE4BDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF7004E61F9D6E4000FE4BDD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				EF7004C81F9D6E1800FE4BDD /* IoT */,
+				EF7004DE1F9D6E4000FE4BDD /* Watch */,
+				EF7004ED1F9D6E4000FE4BDD /* Watch Extension */,
 				EF7004C71F9D6E1800FE4BDD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +130,8 @@
 			isa = PBXGroup;
 			children = (
 				EF7004C61F9D6E1800FE4BDD /* IoT.app */,
+				EF7004DD1F9D6E4000FE4BDD /* Watch.app */,
+				EF7004E91F9D6E4000FE4BDD /* Watch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +149,35 @@
 			path = IoT;
 			sourceTree = "<group>";
 		};
+		EF7004DE1F9D6E4000FE4BDD /* Watch */ = {
+			isa = PBXGroup;
+			children = (
+				EF7004DF1F9D6E4000FE4BDD /* Interface.storyboard */,
+				EF7004E21F9D6E4000FE4BDD /* Assets.xcassets */,
+				EF7004E41F9D6E4000FE4BDD /* Info.plist */,
+			);
+			path = Watch;
+			sourceTree = "<group>";
+		};
+		EF7004ED1F9D6E4000FE4BDD /* Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EFE9C3F91FC21FD7009D775E /* Location.gpx */,
+				EF7005061F9D759900FE4BDD /* SCClient.swift */,
+				EF7005071F9D759900FE4BDD /* SCMessage.swift */,
+				EF7004EE1F9D6E4000FE4BDD /* InterfaceController.swift */,
+				EFE9C41B1FC260F3009D775E /* Artwork.swift */,
+				EF7004F01F9D6E4000FE4BDD /* ExtensionDelegate.swift */,
+				EF7004F21F9D6E4000FE4BDD /* NotificationController.swift */,
+				EF7004F41F9D6E4000FE4BDD /* Assets.xcassets */,
+				EF7004F61F9D6E4000FE4BDD /* Info.plist */,
+				EF7004F71F9D6E4000FE4BDD /* PushNotificationPayload.apns */,
+				EF7005041F9D6E7300FE4BDD /* GCDAsyncUdpSocket.m */,
+				EF7005031F9D6E7300FE4BDD /* Watch Extension-Bridging-Header.h */,
+			);
+			path = "Watch Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,15 +188,51 @@
 				EF7004C21F9D6E1800FE4BDD /* Sources */,
 				EF7004C31F9D6E1800FE4BDD /* Frameworks */,
 				EF7004C41F9D6E1800FE4BDD /* Resources */,
+				EF7005021F9D6E4000FE4BDD /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EF7004F91F9D6E4000FE4BDD /* PBXTargetDependency */,
 			);
 			name = IoT;
 			productName = IoT;
 			productReference = EF7004C61F9D6E1800FE4BDD /* IoT.app */;
 			productType = "com.apple.product-type.application";
+		};
+		EF7004DC1F9D6E4000FE4BDD /* Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF7004FF1F9D6E4000FE4BDD /* Build configuration list for PBXNativeTarget "Watch" */;
+			buildPhases = (
+				EF7004DB1F9D6E4000FE4BDD /* Resources */,
+				EF7004FE1F9D6E4000FE4BDD /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF7004EC1F9D6E4000FE4BDD /* PBXTargetDependency */,
+			);
+			name = Watch;
+			productName = Watch;
+			productReference = EF7004DD1F9D6E4000FE4BDD /* Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		EF7004E81F9D6E4000FE4BDD /* Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF7004FB1F9D6E4000FE4BDD /* Build configuration list for PBXNativeTarget "Watch Extension" */;
+			buildPhases = (
+				EF7004E51F9D6E4000FE4BDD /* Sources */,
+				EF7004E61F9D6E4000FE4BDD /* Frameworks */,
+				EF7004E71F9D6E4000FE4BDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Watch Extension";
+			productName = "Watch Extension";
+			productReference = EF7004E91F9D6E4000FE4BDD /* Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -97,6 +247,20 @@
 					EF7004C51F9D6E1800FE4BDD = {
 						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
+					};
+					EF7004DC1F9D6E4000FE4BDD = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					EF7004E81F9D6E4000FE4BDD = {
+						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes.watchos.extension = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -114,6 +278,8 @@
 			projectRoot = "";
 			targets = (
 				EF7004C51F9D6E1800FE4BDD /* IoT */,
+				EF7004DC1F9D6E4000FE4BDD /* Watch */,
+				EF7004E81F9D6E4000FE4BDD /* Watch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -125,7 +291,27 @@
 			files = (
 				EF7004D41F9D6E1800FE4BDD /* LaunchScreen.storyboard in Resources */,
 				EF7004D11F9D6E1800FE4BDD /* Assets.xcassets in Resources */,
+				EFE9C3FA1FC21FD7009D775E /* Location.gpx in Resources */,
 				EF7004CF1F9D6E1800FE4BDD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF7004DB1F9D6E4000FE4BDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF7004E31F9D6E4000FE4BDD /* Assets.xcassets in Resources */,
+				EFE9C3FB1FC21FD7009D775E /* Location.gpx in Resources */,
+				EF7004E11F9D6E4000FE4BDD /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF7004E71F9D6E4000FE4BDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFE9C3FC1FC21FD7009D775E /* Location.gpx in Resources */,
+				EF7004F51F9D6E4000FE4BDD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,7 +327,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EF7004E51F9D6E4000FE4BDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF7005051F9D6E7300FE4BDD /* GCDAsyncUdpSocket.m in Sources */,
+				EF7005081F9D759900FE4BDD /* SCClient.swift in Sources */,
+				EFE9C41C1FC260F3009D775E /* Artwork.swift in Sources */,
+				EF7004F31F9D6E4000FE4BDD /* NotificationController.swift in Sources */,
+				EF7004F11F9D6E4000FE4BDD /* ExtensionDelegate.swift in Sources */,
+				EF7004EF1F9D6E4000FE4BDD /* InterfaceController.swift in Sources */,
+				EF7005091F9D759900FE4BDD /* SCMessage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF7004EC1F9D6E4000FE4BDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF7004E81F9D6E4000FE4BDD /* Watch Extension */;
+			targetProxy = EF7004EB1F9D6E4000FE4BDD /* PBXContainerItemProxy */;
+		};
+		EF7004F91F9D6E4000FE4BDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF7004DC1F9D6E4000FE4BDD /* Watch */;
+			targetProxy = EF7004F81F9D6E4000FE4BDD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EF7004CD1F9D6E1800FE4BDD /* Main.storyboard */ = {
@@ -158,6 +371,14 @@
 				EF7004D31F9D6E1800FE4BDD /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EF7004DF1F9D6E4000FE4BDD /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF7004E01F9D6E4000FE4BDD /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -275,7 +496,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J5QFPQ6XYM;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = IoT/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Matheus-Pereiradarocha.IoT";
@@ -290,13 +511,92 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J5QFPQ6XYM;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = IoT/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Matheus-Pereiradarocha.IoT";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EF7004FC1F9D6E4000FE4BDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FWU9B8VFMU;
+				INFOPLIST_FILE = "Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Matheus-Pereiradarocha.IoT.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Watch Extension/Watch Extension-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		EF7004FD1F9D6E4000FE4BDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FWU9B8VFMU;
+				INFOPLIST_FILE = "Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Matheus-Pereiradarocha.IoT.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Watch Extension/Watch Extension-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		EF7005001F9D6E4000FE4BDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				IBSC_MODULE = Watch_Extension;
+				INFOPLIST_FILE = Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Matheus-Pereiradarocha.IoT.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		EF7005011F9D6E4000FE4BDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				IBSC_MODULE = Watch_Extension;
+				INFOPLIST_FILE = Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Matheus-Pereiradarocha.IoT.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Release;
 		};
@@ -317,6 +617,24 @@
 			buildConfigurations = (
 				EF7004D91F9D6E1800FE4BDD /* Debug */,
 				EF7004DA1F9D6E1800FE4BDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF7004FB1F9D6E4000FE4BDD /* Build configuration list for PBXNativeTarget "Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF7004FC1F9D6E4000FE4BDD /* Debug */,
+				EF7004FD1F9D6E4000FE4BDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF7004FF1F9D6E4000FE4BDD /* Build configuration list for PBXNativeTarget "Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF7005001F9D6E4000FE4BDD /* Debug */,
+				EF7005011F9D6E4000FE4BDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
