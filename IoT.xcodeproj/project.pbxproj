@@ -26,7 +26,6 @@
 		EFE9C3FA1FC21FD7009D775E /* Location.gpx in Resources */ = {isa = PBXBuildFile; fileRef = EFE9C3F91FC21FD7009D775E /* Location.gpx */; };
 		EFE9C3FB1FC21FD7009D775E /* Location.gpx in Resources */ = {isa = PBXBuildFile; fileRef = EFE9C3F91FC21FD7009D775E /* Location.gpx */; };
 		EFE9C3FC1FC21FD7009D775E /* Location.gpx in Resources */ = {isa = PBXBuildFile; fileRef = EFE9C3F91FC21FD7009D775E /* Location.gpx */; };
-		EFE9C41C1FC260F3009D775E /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE9C41B1FC260F3009D775E /* Artwork.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,7 +94,6 @@
 		EF7005061F9D759900FE4BDD /* SCClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCClient.swift; path = "../../SwiftCoAP-master/Example_Projects/SwiftCoAPClientExample/SwiftCoAPClientExample/SCClient.swift"; sourceTree = "<group>"; };
 		EF7005071F9D759900FE4BDD /* SCMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCMessage.swift; path = "../../SwiftCoAP-master/Example_Projects/SwiftCoAPClientExample/SwiftCoAPClientExample/SCMessage.swift"; sourceTree = "<group>"; };
 		EFE9C3F91FC21FD7009D775E /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
-		EFE9C41B1FC260F3009D775E /* Artwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,7 +164,6 @@
 				EF7005061F9D759900FE4BDD /* SCClient.swift */,
 				EF7005071F9D759900FE4BDD /* SCMessage.swift */,
 				EF7004EE1F9D6E4000FE4BDD /* InterfaceController.swift */,
-				EFE9C41B1FC260F3009D775E /* Artwork.swift */,
 				EF7004F01F9D6E4000FE4BDD /* ExtensionDelegate.swift */,
 				EF7004F21F9D6E4000FE4BDD /* NotificationController.swift */,
 				EF7004F41F9D6E4000FE4BDD /* Assets.xcassets */,
@@ -333,7 +330,6 @@
 			files = (
 				EF7005051F9D6E7300FE4BDD /* GCDAsyncUdpSocket.m in Sources */,
 				EF7005081F9D759900FE4BDD /* SCClient.swift in Sources */,
-				EFE9C41C1FC260F3009D775E /* Artwork.swift in Sources */,
 				EF7004F31F9D6E4000FE4BDD /* NotificationController.swift in Sources */,
 				EF7004F11F9D6E4000FE4BDD /* ExtensionDelegate.swift in Sources */,
 				EF7004EF1F9D6E4000FE4BDD /* InterfaceController.swift in Sources */,
